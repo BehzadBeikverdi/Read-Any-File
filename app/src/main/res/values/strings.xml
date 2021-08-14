@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Read Any File</string>
+    <string name="input_output_stream">Input/Output Stream</string>
+    <string name="select_file">Select File</string>
+    <string name="data_to_bytes">Data to Bytes:</string>
+    <string name="img">img</string>
+</resources>

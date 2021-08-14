@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btnText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/input_output_stream"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/btnPDF"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/pdf_reader"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnImg"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/select_image"/>-->
+
+</LinearLayout>
+
+</layout>
