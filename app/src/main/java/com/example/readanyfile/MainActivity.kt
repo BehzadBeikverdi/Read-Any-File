@@ -14,8 +14,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        binding.btnText.setOnClickListener {
-            startActivity(Intent(this, InputOutputStreamActivity::class.java))
+        binding.btnFileToByte.setOnClickListener {
+            startActivity(Intent(this, DataToByteActivity::class.java))
+        }
+
+        binding.btnFileSaveLoad.setOnClickListener {
+            startActivity(Intent(this, SaveLoadActivity::class.java))
         }
     }
 }
