@@ -13,9 +13,7 @@ import java.lang.StringBuilder
 class SaveLoadActivity: AppCompatActivity() {
 
     private lateinit var binding: ActivitySaveLoadBinding
-    val path = Environment.getExternalStorageDirectory().toString();
     private val FILE_NAME = "example.txt"
-    private val FILE_DIR = "$path/example"
 
     @SuppressLint("WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,11 +28,8 @@ class SaveLoadActivity: AppCompatActivity() {
                 fos = openFileOutput(FILE_NAME, MODE_PRIVATE)
                 fos.write(text.toByteArray())
 
-                val folder = File(path, FILE_NAME)
-                folder.mkdirs()
-
                 binding.edtT.setText("")
-                Toast.makeText(this, "Save to $FILE_DIR/$FILE_NAME", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Save to $filesDir/$FILE_NAME", Toast.LENGTH_LONG).show()
 
             } catch (e: FileNotFoundException) {
                 e.printStackTrace()
